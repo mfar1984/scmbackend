@@ -41,6 +41,9 @@ const nextConfig = {
     serverActions: {
       bodySizeLimit: '10mb',
     },
+    // Limit build workers: the cPanel host reports 128 CPUs and one worker
+    // per CPU gets `next build` killed by the account memory limit.
+    cpus: 1,
   },
   
   // Environment variables that should be available on client-side
