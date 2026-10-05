@@ -1,0 +1,38 @@
+# ============================================
+# TERMINAL COMMANDS untuk scm-core.malaysiadev.com
+# Copy-paste commands ini satu per satu
+# ============================================
+
+# 1. Navigate to project folder
+cd /home/malaysiadev/scm-core.malaysiadev.com
+
+# 2. Activate Node.js environment (Node 24)
+source /home/malaysiadev/nodevenv/scm-core.malaysiadev.com/24/bin/activate
+
+# 3. Kill process on port 3000 (if any)
+lsof -ti:3000 | xargs kill -9
+
+# Alternative kill method
+pkill -f "node.*3000"
+
+# 4. Install formidable package
+npm install formidable --save
+
+# 5. Install all dependencies
+npm install --production
+
+# 6. Generate Prisma Client
+npx prisma generate
+
+# 7. Verify installations
+echo "=== Checking Installations ==="
+npm list formidable
+ls -d node_modules/formidable && echo "✅ formidable OK" || echo "❌ formidable MISSING"
+
+# 8. Check standalone server
+ls -la .next/standalone/server.js 2>/dev/null && echo "✅ Standalone OK" || echo "⚠️  Standalone MISSING"
+
+# 9. Done! Now restart app in cPanel
+echo ""
+echo "✅ Setup complete!"
+echo "Go to cPanel → Setup Node.js App → Click RESTART"

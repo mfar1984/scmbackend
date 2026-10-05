@@ -1,0 +1,15 @@
+/* ════════════════════════════════════
+   ROLES MANAGEMENT PAGE
+   Permission matrix specifics
+════════════════════════════════════ */
+
+.rm-matrix-title { display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 500; color: #1f2937; margin-bottom: 4px; }
+.rm-matrix-title i { color: #3b82f6; }
+.rm-matrix-sub { font-size: 12.5px; color: #6b7280; margin-bottom: 16px; }
+.rm-matrix-sub span { color: #9ca3af; font-weight: 600; }
+.rm-footer { display: flex; align-items: center; justify-content: space-between; padding-top: 18px; margin-top: 18px; border-top: 1px solid #f3f4f6; }
+.rm-footer-left { display: flex; gap: 16px; }
+.rm-footer-link { background: none; border: none; cursor: pointer; font-size: 13px; font-weight: 600; color: #3b82f6; padding: 0; transition: color .2s; font-family: inherit; }
+.rm-footer-link:hover { color: #2563eb; }
+.rm-footer-link-red { color: #ef4444; }
+.rm-footer-link-red:hover { color: #dc2626; }

@@ -1,0 +1,46 @@
+/* ════════════════════════════════════
+   TOGGLE SWITCH + RADIO COMPONENTS
+════════════════════════════════════ */
+
+/* Toggle switch */
+.toggle {
+  width: 40px; height: 22px; border-radius: 11px;
+  background: #d1d5db; position: relative;
+  cursor: pointer; transition: background .25s; flex-shrink: 0;
+  display: inline-block;
+}
+.toggle-on { background: #3b82f6; }
+.toggle-thumb {
+  position: absolute; top: 3px; left: 3px;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: #fff; transition: transform .25s;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+.toggle-on .toggle-thumb { transform: translateX(18px); }
+
+/* Trigger row (SMS / notification toggles) */
+.trigger-item {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 11px 0; border-bottom: 1px solid #f3f4f6; cursor: pointer;
+}
+.trigger-item:last-child { border-bottom: none; }
+.trigger-label { font-size: 13.5px; color: #374151; }
+
+/* Radio label */
+.radio-label {
+  display: inline-flex; align-items: center; gap: 7px;
+  font-size: 13.5px; color: #374151; cursor: pointer;
+}
+.radio-label input { accent-color: #3b82f6; width: 15px; height: 15px; }
+
+/* Legacy aliases */
+.int-toggle { width: 40px; height: 22px; border-radius: 11px; background: #d1d5db; position: relative; cursor: pointer; transition: background .25s; flex-shrink: 0; }
+.int-toggle-on { background: #3b82f6; }
+.int-toggle-thumb { position: absolute; top: 3px; left: 3px; width: 16px; height: 16px; border-radius: 50%; background: #fff; transition: transform .25s; box-shadow: 0 1px 3px rgba(0,0,0,.2); }
+.int-toggle-on .int-toggle-thumb { transform: translateX(18px); }
+.int-triggers-grid { display: flex; flex-direction: column; gap: 0; }
+.int-trigger-item { display: flex; align-items: center; justify-content: space-between; padding: 11px 0; border-bottom: 1px solid #f3f4f6; cursor: pointer; }
+.int-trigger-item:last-child { border-bottom: none; }
+.int-trigger-label { font-size: 13.5px; color: #374151; }
+.int-radio-label { display: inline-flex; align-items: center; gap: 7px; font-size: 13.5px; color: #374151; cursor: pointer; }
+.int-radio-label input { accent-color: #3b82f6; width: 15px; height: 15px; }

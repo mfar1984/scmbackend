@@ -1,0 +1,71 @@
+/* ════════════════════════════════════
+   LOGS PAGES
+════════════════════════════════════ */
+
+/* Stats strip */
+.log-stats-strip {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+  padding: 12px 16px; background: #f9fafb;
+  border: 1px solid #e5e7eb; border-radius: 10px;
+  margin-bottom: 16px;
+}
+.log-stat-pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 12px; border-radius: 20px;
+  background: #fff; border: 1.5px solid #e5e7eb;
+  font-size: 12.5px; font-weight: 400; color: #374151;
+  cursor: pointer; transition: all .2s;
+}
+.log-stat-pill:hover { border-color: var(--log-color, #3b82f6); color: var(--log-color, #3b82f6); }
+.log-stat-active { background: var(--log-bg, #eff6ff); border-color: var(--log-color, #3b82f6); color: var(--log-color, #3b82f6); }
+.log-stat-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.log-stat-label { font-weight: 500; }
+.log-stat-count {
+  background: rgba(0,0,0,.07); color: inherit;
+  font-size: 11px; font-weight: 500;
+  padding: 1px 6px; border-radius: 10px;
+}
+
+/* Action filter pills (audit) */
+.log-action-pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 5px 12px; border-radius: 20px;
+  background: #fff; border: 1.5px solid #e5e7eb;
+  font-size: 12px; font-weight: 400; color: #6b7280;
+  cursor: pointer; transition: all .2s;
+}
+.log-action-pill:hover { border-color: #3b82f6; color: #3b82f6; }
+.log-action-all { background: #1f2937; color: #fff; border-color: #1f2937; font-weight: 500; }
+.log-action-selected { font-weight: 500; }
+
+/* Audit diff view */
+.audit-diff {
+  display: flex; gap: 16px; flex-wrap: wrap;
+}
+.audit-diff-col {
+  flex: 1; min-width: 240px;
+  border-radius: 8px; overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+.audit-diff-before { border-color: #fecaca; }
+.audit-diff-after  { border-color: #bbf7d0; }
+
+.audit-diff-header {
+  display: flex; align-items: center; gap: 6px;
+  padding: 7px 12px; font-size: 12px; font-weight: 700;
+}
+.audit-diff-before .audit-diff-header { background: #fef2f2; color: #dc2626; }
+.audit-diff-after  .audit-diff-header { background: #f0fdf4; color: #16a34a; }
+
+.audit-diff-row {
+  display: flex; align-items: flex-start; gap: 8px;
+  padding: 6px 12px; border-top: 1px solid #f3f4f6;
+  font-size: 12.5px;
+}
+.audit-diff-key {
+  font-weight: 700; color: #374151; min-width: 100px; flex-shrink: 0;
+  font-family: monospace;
+}
+.audit-diff-val { font-family: monospace; word-break: break-all; }
+.audit-diff-val-old { color: #dc2626; background: #fef2f2; padding: 1px 6px; border-radius: 4px; }
+.audit-diff-val-new { color: #16a34a; background: #f0fdf4; padding: 1px 6px; border-radius: 4px; }

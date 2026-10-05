@@ -1,0 +1,27 @@
+/* ════════════════════════════════════
+   BADGE / STATUS COMPONENTS
+════════════════════════════════════ */
+
+.badge-status {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 11.5px; font-weight: 400;
+  padding: 3px 10px; border-radius: 20px;
+}
+.badge-approved { background: #f0fdf4; color: #16a34a; }
+.badge-rejected { background: #fef2f2; color: #dc2626; }
+.badge-pending  { background: #fffbeb; color: #d97706; }
+.badge-review   { background: #eff6ff; color: #2563eb; }
+.badge-new      { background: #faf5ff; color: #9333ea; }
+.badge-inactive { background: #f3f4f6; color: #6b7280; }
+
+/* Role badge */
+.badge-role {
+  display: inline-block;
+  padding: 3px 10px; border-radius: 20px;
+  background: #f3f4f6; color: #374151;
+  font-size: 11.5px; font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Legacy alias */
+.usr-role-badge { display: inline-block; padding: 3px 10px; border-radius: 20px; background: #f3f4f6; color: #374151; font-size: 11.5px; font-weight: 400; white-space: nowrap; }

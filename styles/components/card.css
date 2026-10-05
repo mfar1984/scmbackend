@@ -1,0 +1,68 @@
+/* ════════════════════════════════════
+   CARD COMPONENTS
+════════════════════════════════════ */
+
+/* Dashboard stat card */
+.stat-card {
+  background: #f8fafc; border-radius: 12px;
+  padding: 20px; border: 1px solid #e2e8f0;
+  display: flex; align-items: flex-start; gap: 14px;
+  transition: all .25s;
+}
+.stat-card:hover { background: #f1f5f9; border-color: #cbd5e1; }
+.stat-icon { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+.stat-icon-blue   { background: #eff6ff; color: #3b82f6; }
+.stat-icon-green  { background: #f0fdf4; color: #22c55e; }
+.stat-icon-amber  { background: #fffbeb; color: #f59e0b; }
+.stat-icon-purple { background: #faf5ff; color: #a855f7; }
+.stat-icon-red    { background: #fef2f2; color: #ef4444; }
+.stat-icon-teal   { background: #f0fdfa; color: #14b8a6; }
+.stat-value   { font-size: 28px; font-weight: 800; color: #0f172a; line-height: 1; margin-bottom: 4px; }
+.stat-label   { font-size: 13px; color: #64748b; margin-bottom: 8px; }
+.stat-change  { font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+.stat-up      { color: #22c55e; }
+.stat-down    { color: #ef4444; }
+.stat-neutral { color: #94a3b8; }
+
+/* Dashboard content card */
+.dash-card { background: #fff; border-radius: 14px; border: 1px solid #e2e8f0; box-shadow: 0 1px 4px rgba(0,0,0,.04); overflow: hidden; }
+.dash-card-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 22px; border-bottom: 1px solid #f1f5f9; }
+.dash-card-title  { font-size: 15px; font-weight: 700; color: #0f172a; }
+.dash-card-action { font-size: 12.5px; font-weight: 600; color: #3b82f6; cursor: pointer; }
+.dash-card-action:hover { color: #2563eb; }
+.dash-card-body   { padding: 18px 22px; }
+
+/* Integration section card */
+.int-card { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 20px 22px; margin-bottom: 16px; }
+.int-card-title { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 500; color: #374151; margin-bottom: 16px; }
+.int-card-title i { color: #3b82f6; font-size: 15px; }
+
+/* Info / warn notes */
+.int-info-note { display: flex; align-items: flex-start; gap: 8px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #1d4ed8; line-height: 1.6; }
+.int-info-note i { color: #3b82f6; flex-shrink: 0; margin-top: 1px; }
+.int-warn-note { display: flex; align-items: flex-start; gap: 8px; background: #fef9c3; border: 1px solid #fde047; border-radius: 8px; padding: 10px 14px; font-size: 13px; color: #a16207; line-height: 1.6; }
+.int-warn-note i { color: #f59e0b; flex-shrink: 0; margin-top: 1px; }
+
+/* Roles info card (view page) */
+.rm-info-card  { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 9px; padding: 12px 16px; }
+.rm-info-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: #9ca3af; margin-bottom: 6px; display: flex; align-items: center; gap: 5px; }
+.rm-info-label i { font-size: 12px; }
+.rm-info-value { font-size: 14px; font-weight: 600; color: #1f2937; }
+
+/* ── Employee multi-step form indicator ── */
+.emp-steps { display: flex; align-items: center; }
+.emp-step-wrap { display: flex; align-items: center; flex: 1; }
+.emp-step { display: flex; align-items: center; gap: 10px; background: none; border: none; cursor: pointer; padding: 0; font-family: inherit; }
+.emp-step-num { width: 38px; height: 38px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; background: #f3f4f6; color: #9ca3af; border: 2px solid #e5e7eb; transition: all .2s; flex-shrink: 0; }
+.emp-step-label { font-size: 13px; font-weight: 500; color: #9ca3af; white-space: nowrap; }
+.emp-step.active .emp-step-num { background: #3b82f6; color: #fff; border-color: #3b82f6; box-shadow: 0 0 0 4px rgba(59,130,246,.15); }
+.emp-step.active .emp-step-label { color: #1f2937; }
+.emp-step.done .emp-step-num { background: #22c55e; color: #fff; border-color: #22c55e; }
+.emp-step.done .emp-step-label { color: #374151; }
+.emp-step-line { flex: 1; height: 2px; background: #e5e7eb; margin: 0 14px; transition: background .2s; }
+.emp-step-line.done { background: #22c55e; }
+
+@media (max-width: 768px) {
+  .emp-step-label { display: none; }
+  .emp-step-line { margin: 0 8px; }
+}

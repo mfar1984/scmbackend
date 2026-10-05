@@ -1,0 +1,49 @@
+/* ════════════════════════════════════
+   FORM COMPONENTS
+   Horizontal layout: label left, input right
+════════════════════════════════════ */
+
+/* Base input / select / textarea */
+.form-input {
+  width: 100%; padding: 9px 12px;
+  border: 1px solid #d1d9e6; border-radius: 7px;
+  font-size: 13.5px; color: #1f2937;
+  outline: none; transition: all .2s; background: #fff;
+  font-family: inherit;
+}
+.form-input:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,.1); }
+.form-input:disabled { background: #f3f4f6; color: #9ca3af; cursor: not-allowed; }
+.form-input.error { border-color: #ef4444; background: #fff5f5; }
+
+/* Horizontal row: label | input */
+.form-row {
+  display: flex; align-items: flex-start;
+  padding: 10px 0; border-bottom: 1px solid #f3f4f6; gap: 16px;
+}
+.form-row:last-child, .form-row-last { border-bottom: none; }
+
+.form-label {
+  width: 160px; flex-shrink: 0;
+  font-size: 13px; font-weight: 400; color: #6b7280;
+  padding-top: 9px; line-height: 1.4;
+}
+.form-label .required { color: #ef4444; margin-left: 2px; }
+.form-label .optional  { font-weight: 400; color: #9ca3af; font-size: 11px; }
+
+.form-field { flex: 1; }
+
+.form-error-msg { font-size: 12px; color: #ef4444; margin-top: 3px; display: block; }
+
+/* Legacy aliases */
+.rm-input { width: 100%; padding: 9px 12px; border: 1px solid #d1d9e6; border-radius: 7px; font-size: 13.5px; color: #1f2937; outline: none; transition: all .2s; background: #fff; font-family: inherit; }
+.rm-input:focus { border-color: #3b82f6; box-shadow: 0 0 0 3px rgba(59,130,246,.1); }
+.rm-label { display: block; font-size: 12.5px; font-weight: 600; color: #374151; margin-bottom: 6px; }
+.rm-label span { color: #ef4444; margin-left: 2px; }
+.rm-optional { font-weight: 400; color: #9ca3af; }
+.usr-form-row { display: flex; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid #f3f4f6; gap: 16px; }
+.usr-form-row-last { border-bottom: none; }
+.usr-form-label { width: 160px; flex-shrink: 0; font-size: 13px; font-weight: 400; color: #6b7280; padding-top: 9px; line-height: 1.4; }
+.usr-form-label span { color: #ef4444; margin-left: 2px; }
+.usr-form-field { flex: 1; }
+.usr-input-err { border-color: #ef4444 !important; background: #fff5f5 !important; }
+.usr-err-msg   { font-size: 12px; color: #ef4444; margin-top: 3px; display: block; }

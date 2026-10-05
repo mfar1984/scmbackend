@@ -1,0 +1,87 @@
+/* ════════════════════════════════════
+   BUTTON COMPONENTS
+   Change here → reflects everywhere.
+   Override in page CSS if needed.
+════════════════════════════════════ */
+
+/* Primary — blue */
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 9px 20px; border-radius: 8px;
+  background: #3b82f6; color: #fff;
+  font-size: 13.5px; font-weight: 600;
+  border: none; cursor: pointer; transition: all .2s;
+  font-family: inherit; text-decoration: none;
+}
+.btn-primary:hover { background: #2563eb; color: #fff; }
+
+/* Outline — grey border */
+.btn-outline {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 9px 16px; border-radius: 8px;
+  border: 1px solid #d1d9e6; background: #fff;
+  font-size: 13px; font-weight: 600; color: #374151;
+  cursor: pointer; transition: all .2s; font-family: inherit;
+  text-decoration: none;
+}
+.btn-outline:hover { border-color: #3b82f6; color: #3b82f6; }
+
+/* Danger — red */
+.btn-danger {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 9px 20px; border-radius: 8px;
+  background: #ef4444; color: #fff;
+  font-size: 13.5px; font-weight: 600;
+  border: none; cursor: pointer; transition: all .2s; font-family: inherit;
+}
+.btn-danger:hover { background: #dc2626; }
+
+/* Reset — red outline (for filter reset buttons) */
+.btn-reset {
+  display: inline-flex; align-items: center; gap: 7px;
+  padding: 9px 16px; border-radius: 8px;
+  border: 1px solid #fecaca; background: #fef2f2;
+  font-size: 13px; font-weight: 600; color: #ef4444;
+  cursor: pointer; transition: all .2s; font-family: inherit;
+}
+.btn-reset:hover { background: #fee2e2; border-color: #ef4444; }
+
+/* Back — small square icon button */
+.btn-back {
+  width: 30px; height: 30px; border-radius: 7px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #f3f4f6; color: #374151; font-size: 14px;
+  text-decoration: none; transition: all .2s; flex-shrink: 0;
+  border: none; cursor: pointer;
+}
+.btn-back:hover { background: #e5e7eb; color: #111827; }
+
+/* Action icon buttons (table row actions) */
+.btn-action {
+  width: 30px; height: 30px; border-radius: 7px;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 13px; cursor: pointer; transition: all .2s;
+  border: none; text-decoration: none;
+}
+.btn-action-view   { background: #eff6ff; color: #3b82f6; }
+.btn-action-view:hover { background: #dbeafe; color: #2563eb; }
+.btn-action-edit   { background: #fefce8; color: #ca8a04; }
+.btn-action-edit:hover { background: #fef9c3; color: #a16207; }
+.btn-action-delete { background: #fef2f2; color: #ef4444; }
+.btn-action-delete:hover { background: #fee2e2; color: #dc2626; }
+
+/* Legacy aliases — keep for backward compat */
+.rm-btn-primary  { display: inline-flex; align-items: center; gap: 7px; padding: 9px 20px; border-radius: 8px; background: #3b82f6; color: #fff; font-size: 13.5px; font-weight: 600; border: none; cursor: pointer; transition: all .2s; font-family: inherit; }
+.rm-btn-primary:hover { background: #2563eb; }
+.rm-btn-outline  { display: inline-flex; align-items: center; gap: 7px; padding: 9px 16px; border-radius: 8px; border: 1px solid #d1d9e6; background: #fff; font-size: 13px; font-weight: 600; color: #374151; cursor: pointer; transition: all .2s; font-family: inherit; }
+.rm-btn-outline:hover { border-color: #3b82f6; color: #3b82f6; }
+.rm-btn-danger   { display: inline-flex; align-items: center; gap: 7px; padding: 9px 20px; border-radius: 8px; background: #ef4444; color: #fff; font-size: 13.5px; font-weight: 600; border: none; cursor: pointer; transition: all .2s; font-family: inherit; }
+.rm-btn-danger:hover { background: #dc2626; }
+.rm-back-btn     { width: 30px; height: 30px; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; background: #f3f4f6; color: #374151; font-size: 14px; text-decoration: none; transition: all .2s; flex-shrink: 0; }
+.rm-back-btn:hover { background: #e5e7eb; color: #111827; }
+.rm-action-btn   { width: 30px; height: 30px; border-radius: 7px; display: inline-flex; align-items: center; justify-content: center; font-size: 13px; cursor: pointer; transition: all .2s; border: none; text-decoration: none; }
+.rm-action-view  { background: #eff6ff; color: #3b82f6; } .rm-action-view:hover  { background: #dbeafe; color: #2563eb; }
+.rm-action-edit  { background: #fefce8; color: #ca8a04; } .rm-action-edit:hover  { background: #fef9c3; color: #a16207; }
+.rm-action-delete{ background: #fef2f2; color: #ef4444; } .rm-action-delete:hover{ background: #fee2e2; color: #dc2626; }
+.usr-btn-reset   { display: inline-flex; align-items: center; gap: 7px; padding: 9px 16px; border-radius: 8px; border: 1px solid #fecaca; background: #fef2f2; font-size: 13px; font-weight: 600; color: #ef4444; cursor: pointer; transition: all .2s; font-family: inherit; }
+.usr-btn-reset:hover { background: #fee2e2; border-color: #ef4444; }

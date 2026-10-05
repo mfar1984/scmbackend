@@ -1,0 +1,86 @@
+/* ════════════════════════════════════
+   CAREER (Postings & Applicants)
+════════════════════════════════════ */
+
+/* Form section heading inside posting modal */
+.cr-form-section-title { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .6px; color: #3b82f6; margin: 18px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #eef2f7; }
+.cr-form-section-title:first-child { margin-top: 0; }
+
+/* Icon theme picker */
+.cr-icon-pick { display: inline-flex; align-items: center; gap: 6px; padding: 8px 12px; font-size: 12.5px; font-weight: 400; color: #6b7280; background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; cursor: pointer; transition: all .15s; font-family: inherit; }
+.cr-icon-pick i { font-size: 14px; }
+.cr-icon-pick:hover { border-color: #c7d2fe; color: #374151; }
+.cr-icon-pick.active { background: #1f2937; border-color: #1f2937; color: #fff; }
+
+/* View modal */
+.cr-view-icon { width: 44px; height: 44px; border-radius: 10px; background: #eff6ff; color: #3b82f6; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+.cr-view-block-title { font-size: 13px; font-weight: 600; color: #1e3a8a; margin-bottom: 10px; }
+.cr-view-list { margin: 0; padding-left: 18px; }
+.cr-view-list li { font-size: 13px; color: #374151; line-height: 1.8; }
+
+/* Applicant status dropdown menu */
+.cr-status-menu { position: absolute; right: 0; top: calc(100% + 4px); background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,.12); padding: 6px; min-width: 200px; z-index: 50; }
+.cr-status-item { display: block; width: 100%; text-align: left; padding: 9px 14px; font-size: 13px; font-weight: 400; background: none; border: none; border-radius: 7px; cursor: pointer; transition: background .12s; font-family: inherit; }
+.cr-status-item:hover { background: #f3f4f6; }
+.cr-status-item.is-current { background: #f9fafb; }
+.cr-status-pending  { color: #6b7280; }
+.cr-status-shortlisted { color: #2563eb; }
+.cr-status-interview { color: #7c3aed; }
+.cr-status-offered  { color: #16a34a; }
+.cr-status-rejected { color: #dc2626; }
+.cr-status-hired    { color: #15803d; }
+
+/* Applicant detail panels */
+.cr-panel { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; margin-bottom: 16px; }
+.cr-panel-head { display: flex; align-items: center; gap: 8px; padding: 11px 16px; background: #f9fafb; border-bottom: 1px solid #eef2f7; font-size: 13px; font-weight: 500; color: #374151; }
+.cr-panel-head i { color: #3b82f6; }
+.cr-panel-head.is-blue { background: #3b82f6; color: #fff; }
+.cr-panel-head.is-blue i { color: #fff; }
+.cr-panel-body { padding: 14px 16px; }
+.cr-kv { display: flex; padding: 6px 0; }
+.cr-kv-label { width: 150px; flex-shrink: 0; font-size: 12.5px; color: #9ca3af; }
+.cr-kv-value { flex: 1; font-size: 13px; color: #1f2937; }
+.cr-kv-value.accent { color: #16a34a; }
+
+/* ── Leave type manager ── */
+.lt-code-badge { display: inline-flex; align-items: center; justify-content: center; min-width: 38px; padding: 3px 8px; border-radius: 6px; font-size: 11.5px; font-weight: 600; letter-spacing: .3px; }
+.lt-check-card { display: flex; align-items: flex-start; gap: 12px; padding: 12px 14px; border: 1.5px solid #e5e7eb; border-radius: 10px; cursor: pointer; transition: all .15s; background: #fff; }
+.lt-check-card:hover { border-color: #c7d2fe; }
+.lt-check-card input[type="checkbox"] { width: 17px; height: 17px; margin-top: 2px; accent-color: #3b82f6; cursor: pointer; flex-shrink: 0; }
+.lt-check-card.active { border-color: #3b82f6; background: #f5f8ff; }
+.lt-check-body { flex: 1; }
+.lt-check-title { font-size: 13.5px; font-weight: 500; color: #1f2937; display: flex; align-items: center; gap: 7px; }
+.lt-check-title i { color: #6b7280; font-size: 14px; }
+.lt-check-desc { font-size: 12px; color: #6b7280; margin-top: 3px; }
+.lt-check-card.lt-blue.active  { border-color: #3b82f6; background: #eff6ff; }
+.lt-check-card.lt-amber { background: #fffbeb; border-color: #fde68a; }
+.lt-check-card.lt-amber.active { border-color: #f59e0b; background: #fef9e7; }
+.lt-check-card.lt-amber .lt-check-desc { color: #a16207; }
+
+/* ── HR file upload button ── */
+.srm-file-btn { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 8px; background: #f0f4ff; border: 1.5px solid #c8d8f0; font-size: 12.5px; font-weight: 500; color: #37517e; cursor: pointer; transition: all .2s; }
+.srm-file-btn:hover { background: #e0eaff; border-color: #93a8d8; }
+.srm-file-btn i { font-size: 14px; }
+.srm-file-btn input[type="file"] { display: none; }
+
+
+/* ── Leave type gender eligibility badge ── */
+.lt-gender-badge { display: inline-flex; align-items: center; gap: 4px; font-size: 11.5px; font-weight: 500; padding: 2px 9px; border-radius: 20px; }
+.lt-gender-all    { background: #f3f4f6; color: #6b7280; }
+.lt-gender-male   { background: #eff6ff; color: #2563eb; }
+.lt-gender-female { background: #fdf2f8; color: #db2777; }
+
+
+/* ── Approval trail timeline ── */
+.apt-timeline { display: flex; flex-direction: column; gap: 0; }
+.apt-row { display: flex; gap: 12px; position: relative; padding-bottom: 14px; }
+.apt-row:not(:last-child)::before { content: ''; position: absolute; left: 13px; top: 26px; bottom: 0; width: 2px; background: #eef2f7; }
+.apt-dot { width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 13px; flex-shrink: 0; z-index: 1; }
+.apt-dot.apt-ok { background: #16a34a; }
+.apt-dot.apt-no { background: #dc2626; }
+.apt-body { flex: 1; }
+.apt-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.apt-action { font-size: 13px; font-weight: 500; }
+.apt-time { font-size: 11.5px; color: #9ca3af; }
+.apt-actor { font-size: 12px; color: #6b7280; margin-top: 1px; }
+.apt-remarks { font-size: 12.5px; color: #374151; margin-top: 4px; background: #f8fafc; border-left: 3px solid #e5e7eb; padding: 6px 10px; border-radius: 0 6px 6px 0; }

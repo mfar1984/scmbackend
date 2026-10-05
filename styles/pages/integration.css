@@ -1,0 +1,35 @@
+/* ════════════════════════════════════
+   INTEGRATION PAGES
+════════════════════════════════════ */
+
+.int-section-header { display: flex; align-items: flex-start; gap: 16px; margin-bottom: 24px; }
+.int-section-icon   { width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 22px; color: #fff; flex-shrink: 0; box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+.int-section-title  { font-size: 15px; font-weight: 500; color: #1f2937; margin: 0 0 4px; }
+.int-section-sub    { font-size: 13px; color: #6b7280; margin: 0; }
+
+.int-footer { display: flex; justify-content: flex-end; padding-top: 8px; }
+
+/* Test result feedback */
+.int-test-success { display: flex; align-items: center; gap: 7px; font-size: 13px; color: #15803d; font-weight: 500; }
+.int-test-success i { color: #22c55e; }
+.int-test-error   { display: flex; align-items: center; gap: 7px; font-size: 13px; color: #dc2626; font-weight: 500; }
+.int-test-error i { color: #ef4444; }
+
+/* Connection status */
+.int-status-row  { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.int-status-item { display: flex; align-items: center; gap: 12px; }
+.int-status-dot  { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.int-dot-green   { background: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,.2); }
+.int-dot-red     { background: #ef4444; box-shadow: 0 0 0 3px rgba(239,68,68,.2); }
+.int-dot-amber   { background: #f59e0b; box-shadow: 0 0 0 3px rgba(245,158,11,.2); }
+.int-dot-grey    { background: #d1d5db; }
+.int-dot-grey    { background: #d1d5db; }
+
+/* ── Email profile picker ── */
+.em-profile-pick { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; font-size: 13px; font-weight: 500; color: #6b7280; background: #fff; border: 1.5px solid #e5e7eb; border-radius: 10px; cursor: pointer; transition: all .15s; font-family: inherit; }
+.em-profile-pick i { font-size: 15px; }
+.em-profile-pick:hover { border-color: #c7d2fe; color: #374151; }
+.em-profile-pick.active { border-color: #3b82f6; color: #1e3a8a; background: #eff6ff; }
+.em-profile-dot { width: 8px; height: 8px; border-radius: 50%; }
+.em-profile-dot.on  { background: #22c55e; box-shadow: 0 0 0 3px rgba(34,197,94,.2); }
+.em-profile-dot.off { background: #d1d5db; }
